@@ -6,6 +6,12 @@ body{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
-h1, p{
-    width: 400px;
+#divprincipal{
+    display: inline-flex;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    justify-content: space-between;
+    align-items: center;
 }
