@@ -1,1 +1,11 @@
-/*Bem vindos a area de trabalho*/
+body{
+    margin: 0;
+}
+#cabecalhoprincipal{
+    background-color: red;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, p{
+    width: 400px;
+}
