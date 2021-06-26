@@ -15,3 +15,40 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+
+div#container{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div#contSub{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div.subCon1{
+    margin: 6px;
+    display: inline-flex;
+}
+
+div.subCon2{
+    margin: 6px;
+    display: inline-flex;
+}
+
+button.quadradoConteudo{ 
+    align-items: center;
+    padding: 2.5% 40px 2.5% 40px;
+    text-align: right;
+}
+
+#rodape {
+    width: 100%;
+    background-color: red;
+    padding-top: 2%;
+    display: inline-block;
+}
+
+p {
+    text-align: center;
+}
