@@ -79,3 +79,7 @@ p.precoAlto{
     font-size: 12px;
     margin-bottom: 0%;
 }
+button.btn{
+    background-color: red;
+    border: 0;
+}
