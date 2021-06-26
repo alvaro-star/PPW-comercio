@@ -17,13 +17,19 @@ body{
 }
 
 div#container{
+    flex-wrap:wrap;
+    display: flex;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 div#contSub{
+    background-color: rgba(255, 30, 225, 0.226);
     flex-direction: row;
     justify-content: space-around;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 3%;
 }
 
 div.subCon1{
@@ -36,10 +42,15 @@ div.subCon2{
     display: inline-flex;
 }
 
-button.quadradoConteudo{ 
+button.quadradoConteudo{
+    background-color: white;
+    border-color: rgba(128, 128, 128, 0.308);
+    border-width: thin;
+    border-radius: 3%;
     align-items: center;
-    padding: 2.5% 40px 2.5% 40px;
+    padding: 2.5% 20px 2.5% 20px;
     text-align: right;
+    color: gray;
 }
 
 #rodape {
@@ -47,8 +58,23 @@ button.quadradoConteudo{
     background-color: red;
     padding-top: 2%;
     display: inline-block;
+    color: white;
+    font-weight: 600;
 }
 
 p {
     text-align: center;
+}
+
+p.nomeProduto{
+    color: black;
+}
+
+p.preco{
+    color: red;
+    font-weight: 600;
+}
+p.precoAlto{
+    font-size: 12px;
+    margin-bottom: 0%;
 }
