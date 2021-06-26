@@ -29,17 +29,20 @@ div#contSub{
 div.subCon1{
     margin: 6px;
     display: inline-flex;
+    
 }
 
 div.subCon2{
     margin: 6px;
     display: inline-flex;
+
 }
 
 button.quadradoConteudo{ 
     align-items: center;
     padding: 2.5% 40px 2.5% 40px;
     text-align: right;
+    border-radius: 50px;
 }
 
 #rodape {
@@ -51,4 +54,7 @@ button.quadradoConteudo{
 
 p {
     text-align: center;
+}
+p.preco{
+    color: red;
 }
