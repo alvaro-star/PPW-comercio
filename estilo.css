@@ -83,3 +83,8 @@ button.btn{
     background-color: red;
     border: 0;
 }
+
+p.letrasRodape{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
