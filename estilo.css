@@ -35,11 +35,13 @@ div#contSub{
 div.subCon1{
     margin: 6px;
     display: inline-flex;
+    
 }
 
 div.subCon2{
     margin: 6px;
     display: inline-flex;
+
 }
 
 button.quadradoConteudo{
@@ -50,7 +52,11 @@ button.quadradoConteudo{
     align-items: center;
     padding: 2.5% 20px 2.5% 20px;
     text-align: right;
+<<<<<<< HEAD
     color: gray;
+=======
+    border-radius: 50px;
+>>>>>>> bc88bfdc24eefe90340b6c87e11c5cb49e6f251e
 }
 
 #rodape {
@@ -65,6 +71,7 @@ button.quadradoConteudo{
 p {
     text-align: center;
 }
+<<<<<<< HEAD
 
 p.nomeProduto{
     color: black;
@@ -77,4 +84,8 @@ p.preco{
 p.precoAlto{
     font-size: 12px;
     margin-bottom: 0%;
+=======
+p.preco{
+    color: red;
+>>>>>>> bc88bfdc24eefe90340b6c87e11c5cb49e6f251e
 }
