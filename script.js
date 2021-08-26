@@ -1,5 +1,13 @@
 $(document).ready(function(){
-//edicao
+var row = '<div class="subCon2">';
+    row+= '<button class="quadradoConteudo">';
+    row+= '<img src="{{urlimagem}}" width="200" height="200" alt="#">';
+    row+= '<p class="nomeProduto"> {{nomeproduto}} </p>';
+    row+= '<p class="precoAlto">De {{precooriginal}}</p>';
+    row+= '<p>Por apenas:</p>';
+    row+= '<p class="preco">{{precodesconto}}</p>';
+    row+= '</button>';
+    row+= '</div>';
 
 
 });
