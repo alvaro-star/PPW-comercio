@@ -92,3 +92,6 @@ p.letrasRodape{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
+button.pesquisa{
+    background-color: white;
+}
