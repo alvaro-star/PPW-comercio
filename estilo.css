@@ -19,7 +19,7 @@ body{
 
 div#container{
     flex-wrap:wrap;
-    display: flex;
+    display: flexbox;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
