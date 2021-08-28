@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    min-width: 515px;
+    /*min-width: 515px;*/
 }
 #cabecalhoprincipal{
     background-color: red;
@@ -15,6 +15,10 @@ body{
     padding-top: 1%;
     justify-content: space-between;
     align-items: center;
+}
+#divprincipal p{
+    text-align: left;
+    margin-left: 1%;
 }
 
 div#container{
@@ -87,4 +91,7 @@ button.btn{
 p.letrasRodape{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+}
+button.pesquisa{
+    background-color: white;
 }
