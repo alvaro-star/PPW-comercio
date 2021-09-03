@@ -25,9 +25,7 @@ var row = '<div class="subCon2" id="{{id}}">';
     
         localStorage.setItem("compras", JSON.stringify(vetorCarrinho) );
     }
-    function removercompras(){
-        localStorage.removeItem("compras");
-    }
+    
 $(document).ready(function(){
     
     var rowProdutos = $("#container");
@@ -43,5 +41,5 @@ $(document).ready(function(){
     }
 
     rowProdutos.on("click",".btnComprar",adicionarAoCarrinho);
-    var esvaziar = $("#esvaziar").on("click", removercompras);
+    
 });

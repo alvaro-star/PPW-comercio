@@ -95,3 +95,7 @@ p.letrasRodape{
 button.pesquisa{
     background-color: white;
 }
+#texto{
+    margin: 0%;
+    width: 170px;
+}
