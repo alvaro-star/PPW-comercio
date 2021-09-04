@@ -65,6 +65,10 @@ button.quadradoConteudo{
     display: inline-block;
     color: white;
     font-weight: 600;
+    
+    
+    
+    
 }
 
 p {
@@ -98,4 +102,24 @@ button.pesquisa{
 #texto{
     margin: 0%;
     width: 170px;
+}
+div.img{
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+    border-radius: 50px;
+}
+.nomeProduto, .preco{
+text-align: right;
+}
+.imagem{
+    margin-left: 7% ;
+}
+.btnRemover{
+    margin-left: 7% ;
+    margin-bottom: 2%;
+}
+#esvaziar{
+    margin-top: 2%;
+    margin-bottom: 2%;
 }

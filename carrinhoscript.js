@@ -1,4 +1,4 @@
-var templateItemCarrinho = "<div><img src='{{urlImagem}}' width='88' height='88' alt='#'>";
+var templateItemCarrinho = "<div class = 'img'><img class='imagem' src='{{urlImagem}}' width='88' height='88' alt='#'>";
 templateItemCarrinho += "<p class='nomeProduto'>{{nomeproduto}}</p>";
 templateItemCarrinho += "<p class='preco'>R$ {{precodesconto}}</p>";
 templateItemCarrinho += "<button class='btnRemover'>Remover</button>";
