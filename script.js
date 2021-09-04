@@ -10,20 +10,26 @@ var row = '<div class="subCon2" id="{{id}}">';
     row+= '</button>';
     row+= '</div>';
     function adicionarAoCarrinho(evento){
-        let id = evento.target.parentNode.id;
+        let idProduto = evento.target.parentNode.id;
         
-        let carrinho = localStorage.getItem("compras");
+        let carrinho = localStorage.getItem("carrinho");
     
         let vetorCarrinho;
     
         if(carrinho == null){
-            vetorCarrinho = [id];
+            vetorCarrinho = [{
+                id: idProduto,
+                quant: 1
+            }];
         }else{
-            vetorCarrinho = JSON.parse( localStorage.getItem("compras") );
-            vetorCarrinho.push(id);
+            vetorCarrinho = JSON.parse( localStorage.getItem("carrinho") );
+            vetorCarrinho.push({
+                id: idProduto,
+                quant: 1
+            })
         }
     
-        localStorage.setItem("compras", JSON.stringify(vetorCarrinho) );
+        localStorage.setItem("carrinho", JSON.stringify(vetorCarrinho) );
     }
     
 $(document).ready(function(){

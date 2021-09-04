@@ -1,9 +1,32 @@
-function removercompras(){
-    localStorage.removeItem("compras");
+var templateItemCarrinho = "<div><img src='{{urlImagem}}' width='88' height='88' alt='#'>";
+templateItemCarrinho += "<p class='nomeProduto'>{{nomeproduto}}</p>";
+templateItemCarrinho += "<p class='preco'>R$ {{precodesconto}}</p>";
+templateItemCarrinho += "<button class='btnRemover'>Remover</button>";
+templateItemCarrinho += "</div>";
+
+function removercompra(){
+    localStorage.clear("carrinho");
 }
 
 $(document).ready(function(){
 
-var esvaziar = $("#esvaziar").on("click", removercompras);
+    $('#esvaziar').on("click", removercompra);
 
+    var rowProdutos = $("#containerCarrinho > .row");
+    var carrinho = localStorage.getItem("carrinho");
+    
+    if(carrinho == null){
+        rowProdutos.html("<div class='produto col-12'>Carrinho vazio <a href='index.html'>Vamos às compras?!</a></div>");
+    }else{
+        vetorCarrinho = JSON.parse(carrinho);
+
+        for(let i = 0; i < vetorCarrinho.length; i++){
+            for(let j = 0; j < baseProdutos.length; j++){
+                if(vetorCarrinho[i].id == baseProdutos[j].id){
+                    let itemCarrinho = templateItemCarrinho.replace("{{urlImagem}}", baseProdutos[j].urlImagem).replace("{{precooriginal}}", baseProdutos[j].preco);
+                    rowProdutos.append(itemCarrinho);
+                }
+            }
+        }
+    }
 });
