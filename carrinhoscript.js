@@ -23,7 +23,7 @@ $(document).ready(function(){
         for(let i = 0; i < vetorCarrinho.length; i++){
             for(let j = 0; j < baseProdutos.length; j++){
                 if(vetorCarrinho[i].id == baseProdutos[j].id){
-                    let itemCarrinho = templateItemCarrinho.replace("{{urlImagem}}", baseProdutos[j].urlImagem).replace("{{precooriginal}}", baseProdutos[j].preco);
+                    let itemCarrinho = templateItemCarrinho.replace("{{urlImagem}}", baseProdutos[j].urlImagem).replace("{{precodesconto}}", baseProdutos[j].precodesconto).replace("{{nomeproduto}}", baseProdutos[j].nomeproduto);
                     rowProdutos.append(itemCarrinho);
                 }
             }
