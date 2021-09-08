@@ -3,7 +3,7 @@ body{
     /*min-width: 515px;*/
 }
 #cabecalhoprincipal{
-    background-color: red;
+    background-color: rgb(167, 38, 43);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -21,11 +21,14 @@ body{
     margin-left: 1%;
 }
 
+
 div#container{
-    flex-wrap:wrap;
-    display: flexbox;
+    flex-wrap: wrap;
+    display: inline-flex;
+    justify-content: space-around;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(86, 213, 203);
 }
 
 div#contSub{
@@ -47,28 +50,23 @@ div.subCon2{
     display: inline-flex;
 }
 
-button.quadradoConteudo{
+div.quadradoConteudo{
     background-color: white;
     border-color: rgba(128, 128, 128, 0.308);
     border-width: thin;
     border-radius: 3%;
     align-items: center;
     padding: 2.5% 20px 2.5% 20px;
-    text-align: right;
     color: gray;
 }
 
 #rodape {
     width: 100%;
-    background-color: red;
+    background-color: rgb(167, 38, 43);
     padding-top: 2%;
     display: inline-block;
     color: white;
     font-weight: 600;
-    
-    
-    
-    
 }
 
 p {
@@ -82,14 +80,16 @@ p.nomeProduto{
 p.preco{
     color: red;
     font-weight: 600;
+    text-align: center;
 }
 p.precoAlto{
     font-size: 12px;
     margin-bottom: 0%;
 }
 button.btn{
-    background-color: red;
+    background-color: rgb(167, 38, 43);
     border: 0;
+    text-align: center;
 }
 
 p.letrasRodape{
@@ -106,11 +106,11 @@ button.pesquisa{
 div.img{
     border-style: solid;
     border-width: 1px;
-    border-color: red;
+    background-color: rgb(167, 38, 43);
     border-radius: 50px;
 }
 .nomeProduto, .preco{
-text-align: right;
+    text-align: right;
 }
 .imagem{
     margin-left: 7% ;
@@ -122,4 +122,7 @@ text-align: right;
 #esvaziar{
     margin-top: 2%;
     margin-bottom: 2%;
+}
+.btn-danger{
+    background-color: rgb(167, 38, 43);
 }
