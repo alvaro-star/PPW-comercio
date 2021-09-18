@@ -5,7 +5,7 @@ const baseProdutos = [
         urlImagem: "https://t-static.dafiti.com.br/uWGE8i-d34ztRPaWOXDMk4zCnG0=/fit-in/430x623/static.dafiti.com.br/p/sv-sapatos-social-masculino-em-couro-6541-9348985-1-zoom.jpg",
         nomeproduto: "Sapato de Couro Social",
         precooriginal: 191.99,
-        taxadesconto: 0.6,
+        taxadesconto: 0.9,
         precoD: 0
     },
     {
@@ -66,11 +66,14 @@ const baseProdutos = [
     }
     
 ];
+console.log(baseProdutos);
 
-function precoDesconto(produto){
-    return produto.precooriginal * (1 - produto.taxadesconto)
-}
+//var precoDesconto = produto => produto.precooriginal * (1 - produto.taxadesconto);
 
-const preco = baseProdutos.map(precoDesconto(baseProdutos))
-baseProdutos.precoD = preco
-console.log(baseProdutos.precoD)
+var preco = baseProdutos.map(function(baseProdutos){
+    baseProdutos.precoD = (baseProdutos.precooriginal * (1 - baseProdutos.taxadesconto));
+    return (baseProdutos.precooriginal * (1 - baseProdutos.taxadesconto));
+});
+//baseProdutos.precoD = preco;
+console.log(baseProdutos.precoD);
+console.log(preco);
