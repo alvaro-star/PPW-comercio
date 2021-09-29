@@ -24,7 +24,11 @@ $(document).ready(function(){
         for(let i = 0; i < vetorCarrinho.length; i++){
             for(let j = 0; j < baseProdutos.length; j++){
                 if(vetorCarrinho[i].id == baseProdutos[j].id){
-                    let itemCarrinho = templateItemCarrinho.replace("{{urlImagem}}", baseProdutos[j].urlImagem).replace("{{precodesconto}}", baseProdutos[j].precodesconto).replace("{{nomeproduto}}", baseProdutos[j].nomeproduto);
+                    let itemCarrinho = templateItemCarrinho.
+                    replace("{{urlImagem}}", baseProdutos[j].urlImagem).
+                    replace("{{precodesconto}}", baseProdutos[j].precodesconto).
+                    replace("{{nomeproduto}}", baseProdutos[j].nomeproduto).
+                    replace("{{precoD}}",baseProdutos[j].precoD);
                     rowProdutos.append(itemCarrinho);
                 }
             }

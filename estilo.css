@@ -17,7 +17,7 @@ body{
     align-items: center;
 }
 #divprincipal p{
-    text-align: left;
+    text-align: center;
     margin-left: 1%;
 }
 
@@ -75,7 +75,7 @@ p {
 
 p.nomeProduto{
     color: black;
-    text-align: left ;
+    text-align: center;
     margin-top: 1% ;
     margin-left: 3%;
     margin-bottom: 0%;
@@ -84,10 +84,7 @@ p.nomeProduto{
 p.preco{
     color: red;
     font-weight: 600;
-    text-align: right ;
-    margin-right: 10% ;
-    margin-bottom: 1%;
-   
+    text-align: center ;  
     
 }
 p.precoAlto{

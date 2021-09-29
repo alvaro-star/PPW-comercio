@@ -70,10 +70,9 @@ console.log(baseProdutos);
 
 //var precoDesconto = produto => produto.precooriginal * (1 - produto.taxadesconto);
 
-var preco = baseProdutos.map(function(baseProdutos){
-    baseProdutos.precoD = (baseProdutos.precooriginal * (1 - baseProdutos.taxadesconto));
-    return (baseProdutos.precooriginal * (1 - baseProdutos.taxadesconto));
+baseProdutos = baseProdutos.map(function(baseProdutos){
+    var valor = baseProdutos.precooriginal * (1 - baseProdutos.taxadesconto);
+    baseProdutos.precoD = (Math.trunc(valor*100))/100;
 });
 //baseProdutos.precoD = preco;
 console.log(baseProdutos.precoD);
-console.log(preco);
